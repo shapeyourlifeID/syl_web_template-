@@ -1,0 +1,43 @@
+.syl-header {
+  padding: 40px 0 0;
+  position: relative;
+  background-image: linear-gradient(to right, #324178, #3d4e90);
+
+  .navbar {
+    height: 74px;
+    background-color: $syl-yellow-default !important;
+    border-radius: 20px;
+    .navbar-collapse {
+      @media (max-width: 992px) {
+        background: $syl-yellow-default;
+        border-radius: 10px;
+        transform: translateY(14px);
+        overflow: hidden;
+      }
+    }
+    .navbar-nav {
+      .nav-link {
+        font-size: 18px;
+        color: $syl-body;
+        font-weight: 500;
+      }
+      .nav-item {
+        @media (max-width: 992px) {
+          padding: 0 20px;
+          &:hover {
+            background-color: lighten($syl-yellow-default, 3%);
+          }
+        }
+        &:not(:last-child) {
+          @media (min-width: 992px) {
+            margin-right: 10px;
+          }
+
+          @media (min-width: 1200px) {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
