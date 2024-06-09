@@ -15,4 +15,20 @@
     --bs-btn-disabled-bg: #{$syl-yellow-default};
     --bs-btn-disabled-border-color: #{$syl-yellow-default};
   }
+  &.btn-blue-dark {
+    --bs-btn-color: white;
+    --bs-btn-bg: #{$syl-blue-dark};
+    --bs-btn-border-color: #{$syl-blue-dark};
+    --bs-btn-hover-color: #{$syl-body};
+    --bs-btn-hover-bg: #{darken($syl-blue-dark, 5%)};
+    --bs-btn-hover-border-color: #{darken($syl-blue-dark, 5%)};
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+    --bs-btn-active-color: #{$syl-body};
+    --bs-btn-active-bg: #{darken($syl-blue-dark, 8%)};
+    --bs-btn-active-border-color: #{darken($syl-blue-dark, 8%)};
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #{$syl-body};
+    --bs-btn-disabled-bg: #{$syl-blue-dark};
+    --bs-btn-disabled-border-color: #{$syl-blue-dark};
+  }
 }
