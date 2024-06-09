@@ -1,0 +1,9 @@
+.card {
+  &.card-large-horizontal {
+    .card-title {
+      font-size: 38px;
+      color: $syl-blue-dark;
+      font-weight: 600;
+    }
+  }
+}
