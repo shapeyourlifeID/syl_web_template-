@@ -25,7 +25,7 @@ body {
 }
 .syl-header .navbar .navbar-nav .nav-link {
   font-size: 18px;
-  color: #253058;
+  color: #3c4d8e;
   font-weight: 500;
 }
 @media (max-width: 992px) {
@@ -70,20 +70,27 @@ body {
   box-shadow: none;
 }
 
+.text-dark-blue {
+  color: #3c4d8e;
+}
+
 .syl-hero {
   padding: 55px 0 0;
   background-image: linear-gradient(to right, #324178, #3d4e90);
 }
-.syl-hero__contents > * {
-  margin-bottom: 30px;
-}
-.syl-hero__image {
-  width: 80%;
+@media (min-width: 992px) {
+  .syl-hero__left {
+    flex: 1;
+  }
 }
 @media (min-width: 992px) {
-  .syl-hero__image {
-    width: 100%;
+  .syl-hero__right {
+    flex: 1;
+    max-width: 573px;
   }
+}
+.syl-hero__right > * {
+  margin-bottom: 30px;
 }
 .syl-hero__title {
   font-size: 50px;
@@ -91,12 +98,12 @@ body {
 }
 @media (min-width: 992px) {
   .syl-hero__title {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 @media (min-width: 1200px) {
   .syl-hero__title {
-    font-size: 80px;
+    font-size: 74px;
   }
 }
 .syl-hero__description {

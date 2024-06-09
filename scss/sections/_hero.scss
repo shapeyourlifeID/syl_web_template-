@@ -1,15 +1,19 @@
 .syl-hero {
   padding: 55px 0 0;
   background-image: linear-gradient(to right, #324178, #3d4e90);
-  &__contents {
-    & > * {
-      margin-bottom: 30px;
+  &__left {
+    @media (min-width: 992px) {
+      flex: 1;
     }
   }
-  &__image {
-    width: 80%;
+  &__right {
     @media (min-width: 992px) {
-      width: 100%;
+      flex: 1;
+      max-width: 573px;
+    }
+
+    & > * {
+      margin-bottom: 30px;
     }
   }
   &__title {
@@ -17,11 +21,11 @@
     font-weight: 600;
 
     @media (min-width: 992px) {
-      font-size: 70px;
+      font-size: 60px;
     }
 
     @media (min-width: 1200px) {
-      font-size: 80px;
+      font-size: 74px;
     }
   }
   &__description {
