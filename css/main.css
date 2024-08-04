@@ -179,6 +179,74 @@ body {
   background-color: #f3e593;
 }
 
+.all-fundings {
+  padding: 50px 0;
+}
+.all-fundings .search-fundings {
+  width: 100%;
+  color: #3c4d8e;
+  border-color: #3c4d8e;
+}
+@media (min-width: 992px) {
+  .all-fundings .search-fundings {
+    width: 300px;
+  }
+}
+.all-fundings__filter {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 10px 18px;
+  height: fit-content;
+}
+.all-fundings__filter .accordion {
+  --bs-accordion-btn-icon-width: 16px;
+}
+.all-fundings__filter .accordion-item {
+  border: 0;
+  padding: 10px 0;
+}
+.all-fundings__filter .accordion-item:not(:last-child) {
+  border-bottom: 1px solid #a6cbe2;
+}
+.all-fundings__filter .accordion-button {
+  padding: 0;
+  box-shadow: none;
+  background-color: #ffffff;
+  color: #3c4d8e;
+  font-size: 18px;
+  font-weight: 600;
+}
+.all-fundings__filter .accordion-button::after {
+  color: red;
+}
+.all-fundings__filter .accordion-body {
+  padding: 10px 0 0;
+}
+.all-fundings__filter .accordion .form-check span:last-child {
+  color: rgba(37, 48, 88, 0.5);
+}
+.all-fundings__filter .accordion .form-check-input:checked {
+  background-color: #3c4d8e;
+  border-color: #3c4d8e;
+}
+.all-fundings__filter .accordion .form-check .child-checks {
+  padding: 8px 0;
+}
+.all-fundings__main {
+  flex: 1;
+}
+.all-fundings__main .card-title {
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.all-fundings__main .card-footer {
+  color: #253058 !important;
+}
+
 .syl-footer {
   padding: 55px 0 0;
   background-image: linear-gradient(to right, #324178, #3d4e90);
