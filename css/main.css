@@ -173,10 +173,47 @@ body {
   color: #3c4d8e;
 }
 
-.syl-programs-section,
+.syl-programs-section {
+  padding: 50px 0;
+  background-color: #f3e593;
+}
+.syl-programs-section .main-program img {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .syl-programs-section .main-program img {
+    width: auto;
+    height: 380px;
+  }
+}
+
 .syl-contents-and-publication {
   padding: 50px 0;
   background-color: #f3e593;
+}
+
+.side-by-side .card .card-title {
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.side-by-side .card,
+.side-by-side .card img {
+  max-height: 190px;
+}
+@media (min-width: 1200px) {
+  .side-by-side .card,
+  .side-by-side .card img {
+    max-height: 230px;
+  }
+}
+@media (min-width: 1400px) {
+  .side-by-side .card,
+  .side-by-side .card img {
+    max-height: 271px;
+  }
 }
 
 .all-fundings {

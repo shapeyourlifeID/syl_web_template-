@@ -1,5 +1,13 @@
-.syl-programs-section,
-.syl-contents-and-publication {
+.syl-programs-section {
   padding: 50px 0;
   background-color: #f3e593;
+
+  .main-program img {
+    width: 100%;
+
+    @media (min-width: 1200px) {
+      width: auto;
+      height: 380px;
+    }
+  }
 }
