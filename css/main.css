@@ -9,6 +9,7 @@ body {
   padding: 40px 0 0;
   position: relative;
   background-image: linear-gradient(to right, #324178, #3d4e90);
+  z-index: 9999;
 }
 .syl-header .navbar {
   height: 74px;
@@ -325,6 +326,78 @@ body {
   .syl-footer__copyright {
     font-size: 12px;
   }
+}
+.syl-hero-about {
+  background-image: linear-gradient(to right, #324178, #3d4e90);
+  min-height: 95vh;
+  position: relative;
+}
+@media (max-width: 576px) {
+  .syl-hero-about {
+    min-height: 75vh;
+  }
+}
+.syl-hero-about__title-hero {
+  margin-top: 50px;
+  font-size: 10vw;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: -10px;
+}
+@media (max-width: 576px) {
+  .syl-hero-about__title-hero {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+}
+.syl-hero-about__description-hero {
+  position: absolute;
+  height: 100%;
+}
+@media (max-width: 576px) {
+  .syl-hero-about__description-hero {
+    height: fit-content;
+  }
+}
+@media (max-width: 576px) {
+  .syl-hero-about h5 {
+    font-size: 16px;
+  }
+}
+.syl-hero-about__img-hero-about {
+  position: absolute;
+}
+.syl-hero-about__team, .syl-hero-about__background {
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  max-width: max-content;
+  min-width: 700px;
+}
+
+.syl-featured__logo img {
+  height: 83px;
+}
+@media (max-width: 576px) {
+  .syl-featured__logo img {
+    height: 50px;
+  }
+}
+.syl-featured .description {
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  .syl-featured .description {
+    width: 75%;
+  }
+}
+
+.syl-featured {
+  background-color: #f7eeb8;
+}
+
+.syl-featured .logo img {
+  height: 80px;
 }
 
 /*# sourceMappingURL=main.css.map */
