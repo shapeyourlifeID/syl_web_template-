@@ -1,0 +1,63 @@
+.syl-hero-about {
+  background-image: linear-gradient(to right, #324178, #3d4e90);
+  min-height: 95vh;
+  @media (max-width: 576px) {
+    min-height: 75vh;
+  }
+  position: relative;
+
+  &__title-hero {
+    @media (max-width: 576px) {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    margin-top: 50px;
+    font-size: 10vw;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: -10px;
+  }
+
+  &__description-hero {
+    position: absolute;
+    height: 100%;
+    @media (max-width: 576px) {
+      height: fit-content;
+    }
+  }
+
+  h5 {
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+
+  &__img-hero-about {
+    position: absolute;
+  }
+
+  &__team,
+  &__background {
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    max-width: max-content;
+    min-width: 700px;
+  }
+}
+
+.syl-featured {
+  &__logo img {
+    height: 83px;
+    @media (max-width: 576px) {
+      height: 50px;
+    }
+  }
+
+  .description {
+    @media (min-width: 576px) {
+      width: 75%;
+    }
+    font-size: 14px;
+  }
+}

@@ -2,7 +2,8 @@
   padding: 40px 0 0;
   position: relative;
   background-image: linear-gradient(to right, #324178, #3d4e90);
-
+  z-index: 9999;
+  
   .navbar {
     height: 74px;
     background-color: $syl-yellow-default !important;
