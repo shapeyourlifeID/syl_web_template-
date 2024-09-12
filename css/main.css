@@ -168,6 +168,11 @@ body {
   padding: 50px 0;
 }
 
+.syl-hero-scholarships-and-exchanges {
+  padding: 25px 0 0;
+  background-image: linear-gradient(to right, #324178, #3d4e90);
+}
+
 .syl-team__role {
   font-size: 14px;
   font-weight: 600;
