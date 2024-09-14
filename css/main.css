@@ -327,6 +327,70 @@ body {
     font-size: 12px;
   }
 }
+.syl-hero-event {
+  padding: 55px 0 0;
+  background-image: linear-gradient(to right, #324178, #3d4e90);
+}
+@media (min-width: 992px) {
+  .syl-hero-event__left {
+    flex: 1;
+  }
+}
+@media (min-width: 992px) {
+  .syl-hero-event__right {
+    flex: 1;
+    max-width: 573px;
+  }
+}
+.syl-hero-event__right > * {
+  margin-bottom: 30px;
+}
+.syl-hero-event__title {
+  font-size: 50px;
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  .syl-hero-event__title {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .syl-hero-event__title {
+    font-size: 74px;
+  }
+}
+.syl-hero-event__description {
+  line-height: 30px;
+}
+.syl-hero-event__search {
+  height: 56px;
+}
+.syl-hero-event__search button {
+  font-size: 30px;
+  width: 56px;
+  height: inherit;
+}
+
+.syl-event {
+  background-color: #e0edf5;
+}
+
+.card {
+  padding: 0;
+}
+.card.card-event .card-body .card-title {
+  font-size: 35px;
+  color: #3c4d8e;
+}
+
+.multiline-truncate {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 .syl-hero-about {
   background-image: linear-gradient(to right, #324178, #3d4e90);
   min-height: 95vh;
@@ -398,6 +462,70 @@ body {
 
 .syl-featured .logo img {
   height: 80px;
+}
+
+.syl-hero-event {
+  padding: 55px 0 0;
+  background-image: linear-gradient(to right, #324178, #3d4e90);
+}
+@media (min-width: 992px) {
+  .syl-hero-event__left {
+    flex: 1;
+  }
+}
+@media (min-width: 992px) {
+  .syl-hero-event__right {
+    flex: 1;
+    max-width: 573px;
+  }
+}
+.syl-hero-event__right > * {
+  margin-bottom: 30px;
+}
+.syl-hero-event__title {
+  font-size: 50px;
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  .syl-hero-event__title {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .syl-hero-event__title {
+    font-size: 74px;
+  }
+}
+.syl-hero-event__description {
+  line-height: 30px;
+}
+.syl-hero-event__search {
+  height: 56px;
+}
+.syl-hero-event__search button {
+  font-size: 30px;
+  width: 56px;
+  height: inherit;
+}
+
+.syl-event {
+  background-color: #e0edf5;
+}
+
+.card {
+  padding: 0;
+}
+.card.card-event .card-body .card-title {
+  font-size: 35px;
+  color: #3c4d8e;
+}
+
+.multiline-truncate {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 /*# sourceMappingURL=main.css.map */
