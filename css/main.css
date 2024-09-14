@@ -508,4 +508,24 @@ body {
   height: inherit;
 }
 
+.syl-event {
+  background-color: #e0edf5;
+}
+
+.card {
+  padding: 0;
+}
+.card.card-event .card-body .card-title {
+  font-size: 35px;
+  color: #3c4d8e;
+}
+
+.multiline-truncate {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 /*# sourceMappingURL=main.css.map */
