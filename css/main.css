@@ -464,4 +464,48 @@ body {
   height: 80px;
 }
 
+.syl-hero-event {
+  padding: 55px 0 0;
+  background-image: linear-gradient(to right, #324178, #3d4e90);
+}
+@media (min-width: 992px) {
+  .syl-hero-event__left {
+    flex: 1;
+  }
+}
+@media (min-width: 992px) {
+  .syl-hero-event__right {
+    flex: 1;
+    max-width: 573px;
+  }
+}
+.syl-hero-event__right > * {
+  margin-bottom: 30px;
+}
+.syl-hero-event__title {
+  font-size: 50px;
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  .syl-hero-event__title {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .syl-hero-event__title {
+    font-size: 74px;
+  }
+}
+.syl-hero-event__description {
+  line-height: 30px;
+}
+.syl-hero-event__search {
+  height: 56px;
+}
+.syl-hero-event__search button {
+  font-size: 30px;
+  width: 56px;
+  height: inherit;
+}
+
 /*# sourceMappingURL=main.css.map */
