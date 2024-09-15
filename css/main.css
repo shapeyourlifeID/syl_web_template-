@@ -644,40 +644,4 @@ body {
   background-color: #f7eeb8;
 }
 
-.syl-highlights {
-  background-color: #f7eeb8;
-}
-
-.card-title-high {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.card-text-high {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.foot-high {
-  font-size: 15px;
-}
-
-.btn-custom {
-  background-color: #3C4D8E;
-}
-
-.btn-custom:hover {
-  background-color: #e65b63;
-}
-
-.pos-btn {
-  justify-content: center;
-}
-
 /*# sourceMappingURL=main.css.map */
