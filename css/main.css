@@ -528,13 +528,15 @@ body {
   -webkit-box-orient: vertical;
 }
 
-.webinar{
-  background-color: #F7EEB8;
+.webinar {
+  background-color: #f7eeb8;
 }
-.card.card-webinar .card-body-webinar .card-title{
+
+.card.card-webinar .card-body-webinar .card-title {
   font-size: 35px;
   color: #3c4d8e;
 }
+
 .webinars-section {
   text-align: center;
 }
@@ -542,7 +544,7 @@ body {
 .webinars-section h2 {
   margin-bottom: 20px;
   font-size: 36px;
-  color: #37474F;
+  color: #37474f;
 }
 
 .webinar-card {
@@ -592,7 +594,7 @@ body {
   color: #3c4d8e;
 }
 
-.speaker-image img{
+.speaker-image img {
   width: 50px;
   height: auto;
   border-radius: 50%;
