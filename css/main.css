@@ -600,4 +600,9 @@ body {
   border-radius: 50%;
 }
 
+.syl-featured__logo {
+  justify-content: center;
+  margin-left: 100px;
+}
+
 /*# sourceMappingURL=main.css.map */
