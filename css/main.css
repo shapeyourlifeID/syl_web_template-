@@ -332,6 +332,14 @@ body {
     font-size: 12px;
   }
 }
+.hero-img {
+  width: 118%;
+}
+
+.syl-hero__title {
+  width: 510px;
+}
+
 .syl-hero-event {
   padding: 55px 0 0;
   background-image: linear-gradient(to right, #324178, #3d4e90);
