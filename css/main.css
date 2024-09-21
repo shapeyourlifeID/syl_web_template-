@@ -285,6 +285,11 @@ body {
   color: #253058 !important;
 }
 
+.syl-featured__logo {
+  justify-content: center;
+  margin-left: 100px;
+}
+
 .syl-footer {
   background-image: linear-gradient(to right, #324178, #3d4e90);
   color: white;
@@ -598,11 +603,6 @@ body {
   width: 50px;
   height: auto;
   border-radius: 50%;
-}
-
-.syl-featured__logo {
-  justify-content: center;
-  margin-left: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
