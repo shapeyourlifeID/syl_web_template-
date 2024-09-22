@@ -151,6 +151,79 @@
     </section>
     <!-- ./End -->
 
+    <!-- Upcoming Section -->
+    <section class="syl-upcoming py-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col d-flex align-items-center justify-content-between">
+            <h1 class="text-dark-blue fw-semibold">Upcoming</h1>
+            <div class="ms-auto gap-1">
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Upcoming Card-->
+        <div class="row">
+          <div class="col-12 col-lg-9 mb-4 mb-lg-0">
+            <div class="card border-0 shadow main-program">
+              <div class="d-flex flex-column flex-lg-row">
+                <div class="inline-block">
+                  <img src="./images/mentorships/upcoming1.png" alt="Mentorship Beasiswa Indonesia Maju">
+                </div>
+                <div class="card-body h-100 d-flex flex-column justify-content-between" style="margin-left: 10px;">
+                  <!-- Diubah: Tambahkan margin-left -->
+                  <div>
+                    <h5 class="card-title fw-bold" style="color: #3c4d8e; font-size: 40px;">
+                      Beasiswa Indonesia Maju (BIM) Mentorship
+                    </h5>
+                    <p class="mb-5">Mentorship</p>
+                    <p class="card-text" style="margin-top: 138px;">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque nibh, tincidunt ut ipsum at, aliquet porta
+                      nunc. Proin urna erat, porttitor ut interdum sed, interdum sollicitudin augue.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="row h-100">
+              <div class="col">
+                <div class="card border-0 shadow h-100">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h3 class="card-title fw-bold text-dark-blue" style="margin-bottom: 100px;">Timeline</h3>
+                    <div class="d-flex flex-column gap-3">
+                      <div>
+                        <p class="card-text fw-bold text-dark-blue mb-0">May 4 - 8</p>
+                        <p class="card-text text-dark-blue mb-0">Open Recruitment Mentors & Mentees</p>
+                      </div>
+                      <div>
+                        <p class="card-text fw-bold text-dark-blue mb-0">May 9</p>
+                        <p class="card-text text-dark-blue mb-0">Announcement</p>
+                      </div>
+                      <div>
+                        <p class="card-text fw-bold text-dark-blue mb-0">May 11</p>
+                        <p class="card-text text-dark-blue mb-0">Opening Ceremony</p>
+                      </div>
+                      <div>
+                        <p class="card-text fw-bold text-dark-blue mb-0">May 13 - 31</p>
+                        <p class="card-text text-dark-blue mb-0">Mentorship Period</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ./End -->
+
     <!-- Previous Mentorships Section -->
     <section class="syl-previous-mentorship py-5">
       <div class="container mx-auto">
@@ -181,7 +254,7 @@
                       </h5>
                       <p class="fw-medium prev-date">24 June 2024</p>
                     </div>
-                    
+
                     <p class="card-text fw-medium">One on one consultation balik lagi lhoo 🤩 Kalau ada yang mau tanya-tanya tentang studi di luar negeri, bisa banget konsul disini 🙌</p>
                   </div>
                 </div>
@@ -200,7 +273,7 @@
                       </h5>
                       <p class="fw-medium prev-date">24 June 2024</p>
                     </div>
-                    
+
                     <p class="card-text fw-medium">One on one consultation balik lagi lhoo 🤩 Kalau ada yang mau tanya-tanya tentang studi di luar negeri, bisa banget konsul disini 🙌</p>
                   </div>
                 </div>
@@ -219,7 +292,7 @@
                       </h5>
                       <p class="fw-medium prev-date">24 June 2024</p>
                     </div>
-                    
+
                     <p class="card-text fw-medium">One on one consultation balik lagi lhoo 🤩 Kalau ada yang mau tanya-tanya tentang studi di luar negeri, bisa banget konsul disini 🙌</p>
                   </div>
                 </div>
@@ -238,7 +311,7 @@
                       </h5>
                       <p class="fw-medium prev-date">24 June 2024</p>
                     </div>
-                    
+
                     <p class="card-text fw-medium">One on one consultation balik lagi lhoo 🤩 Kalau ada yang mau tanya-tanya tentang studi di luar negeri, bisa banget konsul disini 🙌</p>
                   </div>
                 </div>
@@ -354,58 +427,5 @@
     <!-- ./End -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const accordion = document.querySelector('.accordion')
-
-        accordion.addEventListener('click', function (e) {
-          if (e.target.classList.contains('parent-checkbox')) {
-            const parentCheckbox = e.target
-            const childChecksContainer = parentCheckbox
-              .closest('.form-check')
-              .querySelector('.child-checks')
-            const childCheckboxes =
-              childChecksContainer.querySelectorAll('.child-checkbox')
-
-            childCheckboxes.forEach((childCheckbox) => {
-              childCheckbox.checked = parentCheckbox.checked
-            })
-            updateParentTotal(parentCheckbox)
-          }
-
-          if (e.target.classList.contains('child-checkbox')) {
-            const childCheckbox = e.target
-            const parentContainer = childCheckbox.closest('.child-checks')
-            const parentCheckbox = parentContainer
-              .closest('.form-check')
-              .querySelector('.parent-checkbox')
-            const childCheckboxes =
-              parentContainer.querySelectorAll('.child-checkbox')
-
-            if (Array.from(childCheckboxes).every((child) => child.checked)) {
-              parentCheckbox.checked = true
-            } else {
-              parentCheckbox.checked = false
-            }
-            updateParentTotal(parentCheckbox)
-          }
-        })
-
-        function updateParentTotal(parentCheckbox) {
-          const parentContainer = parentCheckbox.closest('.form-check')
-          const parentTotal = parentContainer.querySelector('#parent-total')
-          const childCheckboxes =
-            parentContainer.querySelectorAll('.child-checkbox')
-          let total = 0
-
-          childCheckboxes.forEach((childCheckbox) => {
-            if (childCheckbox.checked) {
-              total += parseInt(childCheckbox.value, 10)
-            }
-          })
-          parentTotal.textContent = total
-        }
-      })
-    </script>
   </body>
 </html>

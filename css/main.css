@@ -640,28 +640,8 @@ body {
   border-radius: 50%;
 }
 
-.syl-bootcamps {
+.syl-upcoming {
   background-color: #f7eeb8;
-}
-.syl-bootcamps .container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.syl-bootcamps .row {
-  margin-left: 0;
-  margin-right: 20px;
-}
-.syl-bootcamps .card {
-  margin-left: 0px;
-  margin-right: 20px;
-}
-
-.card-text {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=main.css.map */
