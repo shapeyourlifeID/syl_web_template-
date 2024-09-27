@@ -1,0 +1,28 @@
+.card-previous {
+    .card {
+        .card-title {
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+        }
+    }
+
+    .card,
+    .card img {
+        max-height: 190px;
+
+        @media (min-width: 1200px) {
+            max-height: 350px;
+        }
+
+        @media (min-width: 1400px) {
+            max-height: 409px;
+        }
+    }
+
+    .prev-date {
+        color: $syl-body;
+    }
+}

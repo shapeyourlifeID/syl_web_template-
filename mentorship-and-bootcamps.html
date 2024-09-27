@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shape Your Life - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="syl-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./images/logo.png" alt="Shape Your Life" height="50" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Programs
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Scholarships & Funding
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./scholarships-and-funding.html"
+                        >All Fundings</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Publications</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    More
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ./End -->
+
+    <!-- Hero Section -->
+    <section id="syl-hero" class="syl-hero text-white overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-lg-7 d-flex flex-column justify-content-end align-items-center pe-lg-0 mb-4 mb-lg-0"
+          >
+            <img
+              src="./images/mentorships/mentorship-hero.png"
+              class="hero-img"
+              alt="team"
+            />
+          </div>
+          <div
+            class="col-12 col-lg-5 d-flex flex-column justify-content-center syl-hero__contents mb-lg-5"
+          >
+            <h1 class="syl-hero__title">Mentorships & Bootcamps</h1>
+            <p class="syl-hero__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum neque nibh, tincidunt ut ipsum at, aliquet porta nunc.
+              Proin urna erat, porttitor ut interdum sed, interdum sollicitudin
+              augue. Sed fermentum ante sit.
+            </p>
+            <div class="input-group syl-hero__search mb-5 mb-lg-0">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search for programs..."
+              />
+              <button
+                class="btn btn-yellow d-flex align-items-center justify-content-center"
+                type="button"
+                id="button-addon1"
+              >
+                <i class="bi bi-search fs-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./End -->
+
+    <!-- Upcoming Section -->
+    <section class="syl-upcoming py-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col d-flex align-items-center justify-content-between">
+            <h1 class="text-dark-blue fw-semibold">Upcoming</h1>
+            <div class="ms-auto gap-1">
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Upcoming Card-->
+        <div class="row">
+          <div class="col-12 col-lg-9 mb-4 mb-lg-0">
+            <div class="card border-0 shadow main-program">
+              <div class="d-flex flex-column flex-lg-row">
+                <div class="inline-block">
+                  <img src="./images/mentorships/upcoming1.png" alt="Mentorship Beasiswa Indonesia Maju">
+                </div>
+                <div class="card-body h-100 d-flex flex-column justify-content-between" style="margin-left: 10px;">
+                  <!-- Diubah: Tambahkan margin-left -->
+                  <div>
+                    <h5 class="card-title fw-bold" style="color: #3c4d8e; font-size: 40px;">
+                      Beasiswa Indonesia Maju (BIM) Mentorship
+                    </h5>
+                    <p class="mb-5">Mentorship</p>
+                    <p class="card-text" style="margin-top: 138px;">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque nibh, tincidunt ut ipsum at, aliquet porta
+                      nunc. Proin urna erat, porttitor ut interdum sed, interdum sollicitudin augue.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="row h-100">
+              <div class="col">
+                <div class="card border-0 shadow h-100">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h3 class="card-title fw-bold text-dark-blue" style="margin-bottom: 100px;">Timeline</h3>
+                    <div class="d-flex flex-column gap-3">
+                      <div>
+                        <p class="card-text fw-bold text-dark-blue mb-0">May 4 - 8</p>
+                        <p class="card-text text-dark-blue mb-0">Open Recruitment Mentors & Mentees</p>
+                      </div>
+                      <div>
+                        <p class="card-text fw-bold text-dark-blue mb-0">May 9</p>
+                        <p class="card-text text-dark-blue mb-0">Announcement</p>
+                      </div>
+                      <div>
+                        <p class="card-text fw-bold text-dark-blue mb-0">May 11</p>
+                        <p class="card-text text-dark-blue mb-0">Opening Ceremony</p>
+                      </div>
+                      <div>
+                        <p class="card-text fw-bold text-dark-blue mb-0">May 13 - 31</p>
+                        <p class="card-text text-dark-blue mb-0">Mentorship Period</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ./End -->
+
+    <!-- Previous Mentorships Section -->
+    <section class="syl-previous-mentorship py-5">
+      <div class="container mx-auto">
+        <div class="row mb-4">
+          <div class="col d-flex align-items-center justify-content-between">
+            <h1 class="text-dark-blue fw-semibold">Previous Mentorships</h1>
+            <div>
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- previous mentoship card -->
+        <div class="row">
+          <div class="col-12 col-lg-6 card-previous">
+            <div class="card mb-4 overflow-hidden shadow border-0">
+              <div class="d-flex">
+                <img src="./images/mentorships/previous-img.png" alt="previous-img" />
+                <div>
+                  <div class="card-body d-flex flex-column justify-content-between h-100">
+                    <div class="">
+                      <h5 class="card-title fw-bold" style="color: #3c4d8e; font-size: 25px">
+                        1-on-1 Consultation
+                      </h5>
+                      <p class="fw-medium prev-date">24 June 2024</p>
+                    </div>
+
+                    <p class="card-text fw-medium">One on one consultation balik lagi lhoo 🤩 Kalau ada yang mau tanya-tanya tentang studi di luar negeri, bisa banget konsul disini 🙌</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 card-previous">
+            <div class="card mb-4 overflow-hidden shadow border-0">
+              <div class="d-flex">
+                <img src="./images/mentorships/previous-img.png" alt="previous-img" />
+                <div>
+                  <div class="card-body d-flex flex-column justify-content-between h-100">
+                    <div class="">
+                      <h5 class="card-title fw-bold" style="color: #3c4d8e; font-size: 25px">
+                        1-on-1 Consultation
+                      </h5>
+                      <p class="fw-medium prev-date">24 June 2024</p>
+                    </div>
+
+                    <p class="card-text fw-medium">One on one consultation balik lagi lhoo 🤩 Kalau ada yang mau tanya-tanya tentang studi di luar negeri, bisa banget konsul disini 🙌</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 card-previous">
+            <div class="card mb-4 overflow-hidden shadow border-0">
+              <div class="d-flex">
+                <img src="./images/mentorships/previous-img.png" alt="previous-img" />
+                <div>
+                  <div class="card-body d-flex flex-column justify-content-between h-100">
+                    <div class="">
+                      <h5 class="card-title fw-bold" style="color: #3c4d8e; font-size: 25px">
+                        1-on-1 Consultation
+                      </h5>
+                      <p class="fw-medium prev-date">24 June 2024</p>
+                    </div>
+
+                    <p class="card-text fw-medium">One on one consultation balik lagi lhoo 🤩 Kalau ada yang mau tanya-tanya tentang studi di luar negeri, bisa banget konsul disini 🙌</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 card-previous">
+            <div class="card mb-4 overflow-hidden shadow border-0">
+              <div class="d-flex">
+                <img src="./images/mentorships/previous-img.png" alt="previous-img" />
+                <div>
+                  <div class="card-body d-flex flex-column justify-content-between h-100">
+                    <div class="">
+                      <h5 class="card-title fw-bold" style="color: #3c4d8e; font-size: 25px">
+                        1-on-1 Consultation
+                      </h5>
+                      <p class="fw-medium prev-date">24 June 2024</p>
+                    </div>
+
+                    <p class="card-text fw-medium">One on one consultation balik lagi lhoo 🤩 Kalau ada yang mau tanya-tanya tentang studi di luar negeri, bisa banget konsul disini 🙌</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+
+    <!--Previous bootcamps section-->
+    <section class="syl-bootcamps py-5">
+      <div class="container mx-auto">
+        <div class="row mb-4">
+          <div class="col d-flex align-items-center justify-content-between">
+            <h1 class="text-dark-blue fw-semibold">Previous Bootcamps</h1>
+            <div>
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--Previous bootcamps card-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card card-event border-0 shadow" style="width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 1.5rem;">
+                <div class="card-body">
+                  <h4 id="title_event" class="card-title fw-semibold multiline-truncate">
+                    Intensive Training for Aspiring Bidikmisi Students
+                  </h4>
+                  <p id="date_event" class="card-text">24 June 2024</p>
+                </div>
+                <img src="./images/bootcamps.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p id="date_event" class="card-text fw-medium">Halo, teman-teman Shape Your Life! Apakah kamu punya mimpi kuliah S2 di Luar Negeri? Yuk, wujudkan mimpimu bersama kami! 🙌🏻 ✨ Shape Your Life, bekerja sama dengan Pondok Inspirasi, akan mengadakan program Shape Your Life Bootcamp untuk mahasiswa bidikmisi yang ingin S2 ke luar negeri! ✨ Kapan lagi dapat ALL-IN-ONE PACKAGE lengkap dan GRATIS untuk kamu yang mau studi master ke LN? 🤩</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card card-event border-0 shadow" style="width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 1.5rem;">
+                <div class="card-body">
+                  <h4 id="title_event" class="card-title fw-semibold multiline-truncate">
+                    Intensive Training for Aspiring Bidikmisi Students
+                  </h4>
+                  <p id="date_event" class="card-text">24 June 2024</p>
+                </div>
+                <img src="./images/bootcamps.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p id="date_event" class="card-text fw-medium">Halo, teman-teman Shape Your Life! Apakah kamu punya mimpi kuliah S2 di Luar Negeri? Yuk, wujudkan mimpimu bersama kami! 🙌🏻 ✨ Shape Your Life, bekerja sama dengan Pondok Inspirasi, akan mengadakan program Shape Your Life Bootcamp untuk mahasiswa bidikmisi yang ingin S2 ke luar negeri! ✨ Kapan lagi dapat ALL-IN-ONE PACKAGE lengkap dan GRATIS untuk kamu yang mau studi master ke LN? 🤩</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card card-event border-0 shadow" style="width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 1.5rem;">
+                <div class="card-body">
+                  <h4 id="title_event" class="card-title fw-semibold multiline-truncate">
+                    Intensive Training for Aspiring Bidikmisi Students
+                  </h4>
+                  <p id="date_event" class="card-text">24 June 2024</p>
+                </div>
+                <img src="./images/bootcamps.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p id="date_event" class="card-text fw-medium">Halo, teman-teman Shape Your Life! Apakah kamu punya mimpi kuliah S2 di Luar Negeri? Yuk, wujudkan mimpimu bersama kami! 🙌🏻 ✨ Shape Your Life, bekerja sama dengan Pondok Inspirasi, akan mengadakan program Shape Your Life Bootcamp untuk mahasiswa bidikmisi yang ingin S2 ke luar negeri! ✨ Kapan lagi dapat ALL-IN-ONE PACKAGE lengkap dan GRATIS untuk kamu yang mau studi master ke LN? 🤩</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card card-event border-0 shadow" style="width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 1.5rem;">
+                <div class="card-body">
+                  <h4 id="title_event" class="card-title fw-semibold multiline-truncate">
+                    Intensive Training for Aspiring Bidikmisi Students
+                  </h4>
+                  <p id="date_event" class="card-text">24 June 2024</p>
+                </div>
+                <img src="./images/bootcamps.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p id="date_event" class="card-text fw-medium">Halo, teman-teman Shape Your Life! Apakah kamu punya mimpi kuliah S2 di Luar Negeri? Yuk, wujudkan mimpimu bersama kami! 🙌🏻 ✨ Shape Your Life, bekerja sama dengan Pondok Inspirasi, akan mengadakan program Shape Your Life Bootcamp untuk mahasiswa bidikmisi yang ingin S2 ke luar negeri! ✨ Kapan lagi dapat ALL-IN-ONE PACKAGE lengkap dan GRATIS untuk kamu yang mau studi master ke LN? 🤩</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--end-->
+
+    <!-- Footer Links Section -->
+    <footer id="syl-footer" class="syl-footer">
+      <div class="syl-footer__links">
+        <div class="container">
+          <h1>Footer</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facere
+          quis pariatur. Autem nostrum corporis vero distinctio nulla enim culpa
+          facere quidem praesentium? Itaque qui hic, ex at maiores quasi tenetur
+          numquam, nihil dolor distinctio officia molestias placeat dicta
+          temporibus doloribus praesentium et expedita laboriosam iure.
+          Voluptatibus autem optio quia!
+        </div>
+      </div>
+      <div class="syl-footer__copyright">
+        <div class="container">&copy; 2024 by Shape Your Life</div>
+      </div>
+    </footer>
+    <!-- ./End -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
