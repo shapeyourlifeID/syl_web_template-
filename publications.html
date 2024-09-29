@@ -1,127 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shape Your Life - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shape Your Life - Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
-
-<body>
-
-  <!--Publications Section-->
-    <section class="syl-publications py-5">
-        <div class="container mx-auto">
-            <div class="row mb-4">
-              <div class="col d-flex align-items-center justify-content-between">
-                <h1 class="text-dark-blue fw-semibold">Publications</h1>
-                <button class="btn-publications d-flex align-items-center justify-content-center" type="button">
-                    All Publications
-                    <i class="bi bi-chevron-down fs-4 ms-2"></i>
-                </button>
+  <body>
+    <!-- Header -->
+    <header class="syl-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./images/logo.png" alt="Shape Your Life" height="50" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Programs
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Scholarships & Funding
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./scholarships-and-funding.html"
+                        >All Fundings</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Publications</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    More
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ./End -->
+
+    <!-- Hero Section -->
+    <section id="syl-hero" class="syl-hero text-white overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-lg-7 d-flex flex-column justify-content-end align-items-center pe-lg-5 mb-4 mb-lg-0"
+          >
+            <img
+              src="./images/publication/hero-publication.png"
+              class="img-fluid syl-hero__image"
+              alt="team"
+            />
+          </div>
+          <div
+            class="col-12 col-lg-5 d-flex flex-column justify-content-center syl-hero__contents"
+          >
+            <h1 class="syl-hero__title">Contents & Publications</h1>
+            <p class="syl-hero__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum neque nibh, tincidunt ut ipsum at, aliquet porta nunc.
+              Proin urna erat, porttitor ut interdum sed, interdum sollicitudin
+              augue. Sed fermentum ante sit.
+            </p>
+            <div class="input-group syl-hero__search mb-5 mb-lg-0">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search for programs..."
+              />
+              <button
+                class="btn btn-yellow d-flex align-items-center justify-content-center"
+                type="button"
+                id="button-addon1"
+              >
+                <i class="bi bi-search fs-4"></i>
+              </button>
             </div>
-
-            <!--Publications Card-->
-            <div class="row">
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow-sm border-0" style="width: 350px; height: 520px;">
-                    <img src="./images/image 11.png" class="card-img-top" alt="" style="height: 230px; width: 350px;">
-                    <div class="card-body">
-                        <h2 id="title_event" class="card-title-high text-dark-blue fw-semibold">Find Out Thoroughly About LPDP Scholarship: Things You Have to Prepared and Be Ready</h2>
-                        <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
-                        <br>
-                        <p class="card-text-high">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis repudiandae, laudantium autem aliquid nulla porro explicabo blanditiis unde harum a quidem.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow-sm border-0" style="width: 350px; height: 520px;">
-                    <img src="./images/image 11.png" class="card-img-top" alt="" style="height: 230px; width: 350px;">
-                    <div class="card-body">
-                        <h2 id="title_event" class="card-title-high text-dark-blue fw-semibold">Find Out Thoroughly About LPDP Scholarship: Things You Have to Prepared and Be Ready</h2>
-                        <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
-                        <br>
-                        <p class="card-text-high">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis repudiandae, laudantium autem aliquid nulla porro explicabo blanditiis unde harum a quidem.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow-sm border-0" style="width: 350px; height: 520px;">
-                    <img src="./images/image 11.png" class="card-img-top" alt="" style="height: 230px; width: 350px;">
-                    <div class="card-body">
-                        <h2 id="title_event" class="card-title-high text-dark-blue fw-semibold">Find Out Thoroughly About LPDP Scholarship: Things You Have to Prepared and Be Ready</h2>
-                        <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
-                        <br>
-                        <p class="card-text-high">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis repudiandae, laudantium autem aliquid nulla porro explicabo blanditiis unde harum a quidem.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4 my-2">
-                    <div class="card shadow-sm border-0" style="width: 350px; height: 520px;">
-                    <img src="./images/image 11.png" class="card-img-top" alt="" style="height: 230px; width: 350px;">
-                    <div class="card-body">
-                        <h2 id="title_event" class="card-title-high text-dark-blue fw-semibold">Find Out Thoroughly About LPDP Scholarship: Things You Have to Prepared and Be Ready</h2>
-                        <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
-                        <br>
-                        <p class="card-text-high">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis repudiandae, laudantium autem aliquid nulla porro explicabo blanditiis unde harum a quidem.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4 my-2">
-                    <div class="card shadow-sm border-0" style="width: 350px; height: 520px;">
-                    <img src="./images/image 11.png" class="card-img-top" alt="" style="height: 230px; width: 350px;">
-                    <div class="card-body">
-                        <h2 id="title_event" class="card-title-high text-dark-blue fw-semibold">Find Out Thoroughly About LPDP Scholarship: Things You Have to Prepared and Be Ready</h2>
-                        <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
-                        <br>
-                        <p class="card-text-high">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis repudiandae, laudantium autem aliquid nulla porro explicabo blanditiis unde harum a quidem.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4 my-2">
-                    <div class="card shadow-sm border-0" style="width: 350px; height: 520px;">
-                    <img src="./images/image 11.png" class="card-img-top" alt="" style="height: 230px; width: 350px;">
-                    <div class="card-body">
-                        <h2 id="title_event" class="card-title-high text-dark-blue fw-semibold">Find Out Thoroughly About LPDP Scholarship: Things You Have to Prepared and Be Ready</h2>
-                        <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
-                        <br>
-                        <p class="card-text-high">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis repudiandae, laudantium autem aliquid nulla porro explicabo blanditiis unde harum a quidem.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
-                            <i class="bi bi-arrow-left"></i>
-                        </button>
-                        <div class="pos-btn">
-                            <button class="btn btn-custom text-white fw-bold">1</button>
-                            <button class="btn btn-custom text-white fw-bold">2</button>
-                            <button class="btn btn-custom text-white fw-bold">3</button>
-                        </div>
-                        <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
-                            <i class="bi bi-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
-  <!--End--> 
-  
+    <!-- ./End -->
 
-  <script src="./js/bootstrap.bundle.min.js"></script>
-</body>
+    <!--Publications Section-->
+    <section class="syl-publications py-5">
+      <div class="container mx-auto">
+        <div class="row mb-4">
+          <div class="col d-flex align-items-center justify-content-between">
+            <h1 class="text-dark-blue fw-semibold">Publications</h1>
+            <button
+              class="btn-publications d-flex align-items-center justify-content-center"
+              type="button"
+            >
+              All Publications
+              <i class="bi bi-chevron-down fs-4 ms-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <!--Publications Card-->
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="card shadow-sm border-0"
+              style="width: 350px; height: 520px"
+            >
+              <img
+                src="./images/image 11.png"
+                class="card-img-top"
+                alt=""
+                style="height: 230px; width: 350px"
+              />
+              <div class="card-body">
+                <h2
+                  id="title_event"
+                  class="card-title-high text-dark-blue fw-semibold"
+                >
+                  Find Out Thoroughly About LPDP Scholarship: Things You Have to
+                  Prepared and Be Ready
+                </h2>
+                <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
+                <br />
+                <p class="card-text-high">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis
+                  repudiandae, laudantium autem aliquid nulla porro explicabo
+                  blanditiis unde harum a quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="card shadow-sm border-0"
+              style="width: 350px; height: 520px"
+            >
+              <img
+                src="./images/image 11.png"
+                class="card-img-top"
+                alt=""
+                style="height: 230px; width: 350px"
+              />
+              <div class="card-body">
+                <h2
+                  id="title_event"
+                  class="card-title-high text-dark-blue fw-semibold"
+                >
+                  Find Out Thoroughly About LPDP Scholarship: Things You Have to
+                  Prepared and Be Ready
+                </h2>
+                <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
+                <br />
+                <p class="card-text-high">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis
+                  repudiandae, laudantium autem aliquid nulla porro explicabo
+                  blanditiis unde harum a quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="card shadow-sm border-0"
+              style="width: 350px; height: 520px"
+            >
+              <img
+                src="./images/image 11.png"
+                class="card-img-top"
+                alt=""
+                style="height: 230px; width: 350px"
+              />
+              <div class="card-body">
+                <h2
+                  id="title_event"
+                  class="card-title-high text-dark-blue fw-semibold"
+                >
+                  Find Out Thoroughly About LPDP Scholarship: Things You Have to
+                  Prepared and Be Ready
+                </h2>
+                <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
+                <br />
+                <p class="card-text-high">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis
+                  repudiandae, laudantium autem aliquid nulla porro explicabo
+                  blanditiis unde harum a quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 my-2">
+            <div
+              class="card shadow-sm border-0"
+              style="width: 350px; height: 520px"
+            >
+              <img
+                src="./images/image 11.png"
+                class="card-img-top"
+                alt=""
+                style="height: 230px; width: 350px"
+              />
+              <div class="card-body">
+                <h2
+                  id="title_event"
+                  class="card-title-high text-dark-blue fw-semibold"
+                >
+                  Find Out Thoroughly About LPDP Scholarship: Things You Have to
+                  Prepared and Be Ready
+                </h2>
+                <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
+                <br />
+                <p class="card-text-high">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis
+                  repudiandae, laudantium autem aliquid nulla porro explicabo
+                  blanditiis unde harum a quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 my-2">
+            <div
+              class="card shadow-sm border-0"
+              style="width: 350px; height: 520px"
+            >
+              <img
+                src="./images/image 11.png"
+                class="card-img-top"
+                alt=""
+                style="height: 230px; width: 350px"
+              />
+              <div class="card-body">
+                <h2
+                  id="title_event"
+                  class="card-title-high text-dark-blue fw-semibold"
+                >
+                  Find Out Thoroughly About LPDP Scholarship: Things You Have to
+                  Prepared and Be Ready
+                </h2>
+                <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
+                <br />
+                <p class="card-text-high">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis
+                  repudiandae, laudantium autem aliquid nulla porro explicabo
+                  blanditiis unde harum a quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 my-2">
+            <div
+              class="card shadow-sm border-0"
+              style="width: 350px; height: 520px"
+            >
+              <img
+                src="./images/image 11.png"
+                class="card-img-top"
+                alt=""
+                style="height: 230px; width: 350px"
+              />
+              <div class="card-body">
+                <h2
+                  id="title_event"
+                  class="card-title-high text-dark-blue fw-semibold"
+                >
+                  Find Out Thoroughly About LPDP Scholarship: Things You Have to
+                  Prepared and Be Ready
+                </h2>
+                <p class="card-text">Oct 3, 2023  ⋅  Webinar Highlights</p>
+                <br />
+                <p class="card-text-high">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  dolorem pariatur ullam vel ipsam laboriosam quasi, odio omnis
+                  repudiandae, laudantium autem aliquid nulla porro explicabo
+                  blanditiis unde harum a quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <div class="pos-btn">
+                <button class="btn btn-custom text-white fw-bold">1</button>
+                <button class="btn btn-custom text-white fw-bold">2</button>
+                <button class="btn btn-custom text-white fw-bold">3</button>
+              </div>
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End-->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
