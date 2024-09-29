@@ -168,6 +168,81 @@ body {
   padding: 50px 0;
 }
 
+.syl-relatedpublications-section {
+  padding: 50px 0;
+  background-color: #f7eeb8;
+}
+
+.syl-relatedpublications-section .main-program img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .syl-relatedpublications-section .main-program img {
+    width: auto;
+    height: 380px;
+  }
+}
+.syl-highlights-section {
+  padding: 50px 0;
+  background-color: #f7eeb8;
+}
+
+.syl-highlights-section .main-program img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .syl-highlights-section .main-program img {
+    width: auto;
+    height: 380px;
+  }
+}
+.syl-highlights-section .card-title {
+  margin-top: 5px;
+  overflow-wrap: break-word;
+  display: block;
+}
+
+.syl-highlights-section .card-text {
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.syl-highlights-section .card-footer {
+  color: #253058 !important;
+}
+
+.syl-team-section {
+  padding: 50px 0;
+  background-color: #f7eeb8;
+}
+
+.syl-team-section .main-program img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .syl-team-section .main-program img {
+    width: auto;
+    height: 380px;
+  }
+}
+.syl-team-section .card-title {
+  margin-top: 0px;
+  overflow-wrap: break-word;
+  display: block;
+}
+
+.syl-team-section .card-text {
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+
+.syl-team-section .card-footer {
+  color: #253058 !important;
+}
+
 .syl-team__role {
   font-size: 14px;
   font-weight: 600;
@@ -647,59 +722,6 @@ body {
 
 .syl-upcoming {
   background-color: #f7eeb8;
-}
-
-.syl-publications .btn-publications {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  background-color: #ffffff;
-  color: #3C4D8E;
-  border: 1px solid #3C4D8E;
-  border-radius: 0.375rem;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.syl-publications .btn-publications:hover {
-  background-color: #f0f0f0;
-  color: #3C4D8E;
-}
-.syl-publications .btn-publications i {
-  margin-left: 0.5rem;
-}
-
-.card-title-high {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.card-text-high {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.foot-high {
-  font-size: 15px;
-}
-
-.btn-custom {
-  background-color: #3C4D8E;
-}
-
-.btn-custom:hover {
-  background-color: #e65b63;
-}
-
-.pos-btn {
-  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
