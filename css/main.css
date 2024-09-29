@@ -367,6 +367,11 @@ body {
   color: #253058;
 }
 
+.syl-checkout-instagram {
+  padding: 50px 0;
+  background-color: #f7eeb8;
+}
+
 .syl-hero-event {
   padding: 55px 0 0;
   background-image: linear-gradient(to right, #324178, #3d4e90);
