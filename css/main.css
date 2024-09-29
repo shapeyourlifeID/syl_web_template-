@@ -168,6 +168,81 @@ body {
   padding: 50px 0;
 }
 
+.syl-relatedpublications-section {
+  padding: 50px 0;
+  background-color: #f7eeb8;
+}
+
+.syl-relatedpublications-section .main-program img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .syl-relatedpublications-section .main-program img {
+    width: auto;
+    height: 380px;
+  }
+}
+.syl-highlights-section {
+  padding: 50px 0;
+  background-color: #f7eeb8;
+}
+
+.syl-highlights-section .main-program img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .syl-highlights-section .main-program img {
+    width: auto;
+    height: 380px;
+  }
+}
+.syl-highlights-section .card-title {
+  margin-top: 5px;
+  overflow-wrap: break-word;
+  display: block;
+}
+
+.syl-highlights-section .card-text {
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.syl-highlights-section .card-footer {
+  color: #253058 !important;
+}
+
+.syl-team-section {
+  padding: 50px 0;
+  background-color: #f7eeb8;
+}
+
+.syl-team-section .main-program img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .syl-team-section .main-program img {
+    width: auto;
+    height: 380px;
+  }
+}
+.syl-team-section .card-title {
+  margin-top: 0px;
+  overflow-wrap: break-word;
+  display: block;
+}
+
+.syl-team-section .card-text {
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+
+.syl-team-section .card-footer {
+  color: #253058 !important;
+}
+
 .syl-team__role {
   font-size: 14px;
   font-weight: 600;
@@ -504,7 +579,6 @@ body {
   height: 80px;
 }
 
-<<<<<<< Updated upstream
 .syl-hero-event {
   padding: 55px 0 0;
   background-image: linear-gradient(to right, #324178, #3d4e90);
@@ -645,71 +719,4 @@ body {
   background-color: #f7eeb8;
 }
 
-=======
-.syl-relatedpublications-section {
-  padding: 50px 0;
-  background-color: #f7eeb8;
-}
-.syl-relatedpublications-section .main-program img {
-  width: 100%;
-}
-@media (min-width: 1200px) {
-  .syl-relatedpublications-section .main-program img {
-    width: auto;
-    height: 380px;
-  }
-}
-
-.syl-highlights-section {
-  padding: 50px 0;
-  background-color: #f7eeb8;
-}
-.syl-highlights-section .main-program img {
-  width: 100%;
-}
-@media (min-width: 1200px) {
-  .syl-highlights-section .main-program img {
-    width: auto;
-    height: 380px;
-  }
-}
-.syl-highlights-section .card-title {
-  margin-top: 5px;
-  overflow-wrap: break-word;
-  display: block;
-}
-.syl-highlights-section .card-text {
-  margin-bottom: 40px; 
-  font-size: 15px
-}
-.syl-highlights-section .card-footer {
-  color: #253058 !important;
-}
-
-.syl-team-section {
-  padding: 50px 0;
-  background-color: #f7eeb8;
-}
-.syl-team-section .main-program img {
-  width: 100%;
-}
-@media (min-width: 1200px) {
-  .syl-team-section .main-program img {
-    width: auto;
-    height: 380px;
-  }
-}
-.syl-team-section .card-title {
-  margin-top: 0px;
-  overflow-wrap: break-word;
-  display: block;
-}
-.syl-team-section .card-text {
-  margin-bottom: 40px; 
-  font-size: 17px
-}
-.syl-team-section .card-footer {
-  color: #253058 !important;
-}
->>>>>>> Stashed changes
 /*# sourceMappingURL=main.css.map */
