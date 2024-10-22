@@ -97,6 +97,20 @@ body {
   color: #3c4d8e;
 }
 
+.partner-slider {
+  display: flex;
+}
+
+.partner-slider .slider-box {
+  display: inline-block;
+  margin-right: 55px;
+}
+
+.partner-slider .slider-box img {
+  width: auto;
+  height: 100px;
+}
+
 .syl-hero {
   padding: 55px 0 0;
   background-image: linear-gradient(to right, #324178, #3d4e90);
