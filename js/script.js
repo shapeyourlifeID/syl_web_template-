@@ -99,6 +99,60 @@ $(document).ready(function () {
   //     .catch((error) => console.error('Error fetching teams:', error))
   // }
 
+  // The Teams Home
+  if ($('#the-teams-home').length) {
+    fetch('./utils/teams.json')
+      .then((response) => response.json())
+      .then((teams) => {
+        // console.log(teams)
+
+        teams.forEach((team, index) => {
+          $('#the-teams-home').append(`
+            <div class="col-6">
+              <img
+                src="${team.photo}"
+                alt="${team.name}"
+                class="rounded-4 img-fluid"
+              />
+              <div>
+                <h3
+                  class="card-title fw-semibold text-dark-blue mt-3 text-truncate"
+                >
+                  ${team.name}
+                </h3>
+                <p class="syl-team__role">${team.position}</p>
+              </div>
+            </div>
+          `)
+        })
+
+        $('#the-teams-home').slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: '24px',
+          autoplay: true,
+          infinite: true,
+          dots: false,
+          touchMove: true,
+          touchThreshold: 100,
+          autoplaySpeed: 5000,
+          pauseOnHover: true,
+          speed: 1000
+        })
+
+        $('#team-action-slider').empty().append($('.slick-prev, .slick-next'))
+
+        $('.slick-prev')
+          .html('<i class="bi bi-arrow-left"></i>')
+          .addClass('btn btn-blue-dark px-2 py-1 text-white fw-bold me-1')
+        $('.slick-next')
+          .html('<i class="bi bi-arrow-right"></i>')
+          .addClass('btn btn-blue-dark px-2 py-1 text-white fw-bold')
+      })
+      .catch((error) => console.error('Error fetching teams:', error))
+  }
+
   // The Teams
   if ($('#the-teams').length) {
     fetch('./utils/teams.json')
@@ -132,43 +186,24 @@ $(document).ready(function () {
           }
         })
 
-        // if ($('#the-teams').length) {
-        //   $('#the-teams').slick({
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1,
-        //     adaptiveHeight: true,
-        //     centerMode: false,
-        //     centerPadding: '24px',
-        //     autoplay: true,
-        //     infinite: true,
-        //     dots: false,
-        //     arrows: false,
-        //     touchMove: true,
-        //     touchThreshold: 100,
-        //     autoplaySpeed: 5000,
-        //     pauseOnHover: true,
-        //     speed: 1000
-        //   })
-        // }
-
-        return new Promise((resolve) => {
+        setTimeout(() => {
           $('#the-teams').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true,
             centerMode: false,
             centerPadding: '24px',
-            // autoplay: true,
+            autoplay: true,
             infinite: true,
             dots: false,
             touchMove: true,
             touchThreshold: 100,
-            // autoplaySpeed: 5000,
+            autoplaySpeed: 5000,
             pauseOnHover: true,
             speed: 1000
           })
 
-          $('#team-action-slider').append($('.slick-prev, .slick-next'))
+          $('#team-action-slider').empty().append($('.slick-prev, .slick-next'))
 
           $('.slick-prev')
             .html('<i class="bi bi-arrow-left"></i>')
@@ -176,9 +211,7 @@ $(document).ready(function () {
           $('.slick-next')
             .html('<i class="bi bi-arrow-right"></i>')
             .addClass('btn btn-blue-dark px-2 py-1 text-white fw-bold')
-
-          resolve()
-        })
+        }, 500)
       })
       .catch((error) => console.error('Error fetching teams:', error))
   }
