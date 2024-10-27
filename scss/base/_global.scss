@@ -5,3 +5,7 @@ body {
   color: $syl-body;
   background-color: $syl-blue-light;
 }
+
+.slick-list {
+  height: auto !important;
+}
