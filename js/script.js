@@ -83,7 +83,7 @@ $(document).ready(function () {
   //                   class="card-title fw-bold text-dark-blue team__name"
   //                   style="font-size: 30px"
   //                 >${team.name}</h3>
-  //                 <p class="card-text mb-4 team__desc">${team.desc}</p>
+  //                 <p class="card-text mb-4 team__desc">${team.univ}</p>
   //               </div>
   //               <div
   //                 class="card-footer d-flex justify-content-between text-body-secondary py-3"
@@ -168,7 +168,7 @@ $(document).ready(function () {
                   <h3 class="card-title fw-bold text-dark-blue team__name" style="font-size: 30px">
                     ${team.name}
                   </h3>
-                  <p class="card-text mb-4 team__desc">${team.desc}</p>
+                  <p class="card-text mb-4 team__desc">${team.univ}</p>
                 </div>
                 <div class="card-footer d-flex justify-content-between text-body-secondary py-3">
                   <div class="team__position">${team.position}</div>
