@@ -269,11 +269,13 @@ body {
 }
 .syl-programs-section .main-program img {
   width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 @media (min-width: 1200px) {
   .syl-programs-section .main-program img {
     width: auto;
-    height: 380px;
   }
 }
 
@@ -289,18 +291,22 @@ body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
-.side-by-side .card,
 .side-by-side .card img {
-  max-height: 190px;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+@media (min-width: 992px) {
+  .side-by-side .card img {
+    max-height: 190px;
+  }
 }
 @media (min-width: 1200px) {
-  .side-by-side .card,
   .side-by-side .card img {
     max-height: 230px;
   }
 }
 @media (min-width: 1400px) {
-  .side-by-side .card,
   .side-by-side .card img {
     max-height: 271px;
   }
