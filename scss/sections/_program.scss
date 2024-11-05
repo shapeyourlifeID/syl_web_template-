@@ -2,15 +2,17 @@
   padding: 50px 0;
   background-color: #f3e593;
 
-  .main-program img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    object-position: center;
+  .main-program {
+    img {
+      width: 350px;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
 
-    @media (min-width: 1200px) {
-      width: auto;
-      // height: 380px;
+      @media (max-width: 1200px) {
+        width: 100%;
+        max-height: 300px;
+      }
     }
   }
 }
