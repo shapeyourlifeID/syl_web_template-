@@ -1,36 +1,36 @@
-.text-content h2{
+.text-content h2 {
   margin-top: 20px;
   margin-bottom: 20px;
- font-family: 'Poppins';
- font-weight: '600px';
- font-size: 60px;
- color: #3C4D8E;
+  font-family: "Poppins";
+  font-weight: "600px";
+  font-size: 60px;
+  color: #3C4D8E;
 }
 
-.problem-section{
-  height : 565px;
+.problem-section {
+  height: 565px;
 }
 
-.problem-word{
+.problem-word {
   width: 40%;
   float: left;
   margin-left: 110px;
   margin-right: 70px;
 }
 
-.percentage{
+.percentage {
   font-size: 2em;
-            font-weight: bold;
-            color: #4e4f98; /* Darker blue text color */
-            background-color: #f6e9b4; /* Light yellow background */
-            padding: 10px 15px;
-            border-radius: 8px;
-            margin-right: 15px;
-            display: inline-block;
-            text-align: center;
+  font-weight: bold;
+  color: #4e4f98; /* Darker blue text color */
+  background-color: #f6e9b4; /* Light yellow background */
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-right: 15px;
+  display: inline-block;
+  text-align: center;
 }
 
-.stats-box{
+.stats-box {
   display: flex;
   align-items: center;
   background-color: #f4f7fb; /* Light background color */
@@ -41,48 +41,46 @@
   font-family: Arial, sans-serif;
 }
 
+.solution-section {
+  background-color: #f3e593;
+}
 
-.solution-section{
-   background-color: #f3e593;
- }
- 
- .solution h2{
-   margin-top: 20px;
-   margin-bottom: 20px;
-  font-family: 'Poppins';
-  font-weight: '600px';
+.solution h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Poppins";
+  font-weight: "600px";
   font-size: 60px;
   color: #3C4D8E;
- }
- 
- .solution-word{
-   width: 40%;
-   float: right;
-   margin-left: 500px;
-   margin-right: 70px;
- }
- 
- h1 {
-   font-size: 36px;
-   color: #253058;
-   font-weight: bold;
-   margin: 0;
- }
- 
- /* Subtitle styling */
- .subtitle {
-   font-size: 18px;
-   color: #777;
-   margin-bottom: 20px;
-   
- }
- 
- /* Image container */
- .image-container {
-   text-align: center;
- }
+}
 
- .highlight {
+.solution-word {
+  width: 40%;
+  float: right;
+  margin-left: 500px;
+  margin-right: 70px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #253058;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Image container */
+.image-container {
+  text-align: center;
+}
+
+.highlight {
   background-color: #f7ecb5;
   border-radius: 10px;
   padding: 15px;
@@ -103,11 +101,9 @@
   font-weight: bold;
 }
 
-
-.impact-word{
+.impact-word {
   float: left;
 }
-
 
 .impact-cards {
   display: flex;
@@ -146,7 +142,7 @@
 }
 
 .profile-img {
-  background: url('path/to/image.jpg') no-repeat center center / cover;
+  background: url("path/to/image.jpg") no-repeat center center/cover;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -158,7 +154,6 @@
 .profile-background {
   background-color: #f47c7c;
   border-radius: 100%;
-
 }
 
 /* Optional image positioning for the effect */
@@ -183,7 +178,7 @@
 
 .year {
   font-size: 18px;
-  }
+}
 
 .date {
   font-size: 16px;
@@ -192,32 +187,29 @@
 
 @media (max-width: 992px) {
   .problem-word, .solution-word {
-      width: 100%;
-      float: none;
-      padding: 0 10px;
+    width: 100%;
+    float: none;
+    padding: 0 10px;
   }
-  
   .impact-cards, .stats-box {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
-
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
-    .problem-word, .solution-word, .impact-section {
-        width: 100%;
-        float: none;
-        margin: 0;
-    }
-
-.img{
-  margin-bottom: 50px;
-}
-    .impact-cards {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .stats-box {
-        max-width: 100%;
-    }
-}
+  .problem-word, .solution-word, .impact-section {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  .img {
+    margin-bottom: 50px;
+  }
+  .impact-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .stats-box {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=problem-section.css.map */
