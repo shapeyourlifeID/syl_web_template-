@@ -1,0 +1,26 @@
+main {
+  color: $syl-blue-dark;
+}
+
+// .syl-header {
+//   background-image: none !important;
+// }
+
+.title-section {
+}
+
+.researcher {
+  font-size: 14px;
+}
+
+.keywords button {
+  background-color: $syl-yellow-default;
+  border: none;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}

@@ -782,4 +782,24 @@ body {
   background-color: #f7eeb8;
 }
 
+main {
+  color: #3c4d8e;
+}
+
+.researcher {
+  font-size: 14px;
+}
+
+.keywords button {
+  background-color: #f7eeb8;
+  border: none;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
 /*# sourceMappingURL=main.css.map */
