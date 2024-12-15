@@ -802,4 +802,23 @@ main {
   -o-border-radius: 100px;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #F7EEB8;
+}
+
+td {
+  background-color: #f2f2f2;
+}
+
 /*# sourceMappingURL=main.css.map */
