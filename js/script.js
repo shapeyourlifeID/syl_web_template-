@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+  let pathToHeader
+  if (window.location.pathname.includes('/scholarships/')) {
+    pathToHeader = '../partials/'
+  } else {
+    pathToHeader = '/partials/'
+  }
+
   // Get and append header
   const headerElement = document.getElementById('syl-header')
-  fetch('./partials/header.html')
+  fetch(pathToHeader + 'header.html')
     .then((response) => response.text())
     .then((data) => {
       headerElement.innerHTML = data
@@ -10,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Get and append footer
   const footerElement = document.getElementById('syl-footer')
-  fetch('./partials/footer.html')
+  fetch(pathToHeader + 'footer.html')
     .then((response) => response.text())
     .then((data) => {
       footerElement.innerHTML = data
