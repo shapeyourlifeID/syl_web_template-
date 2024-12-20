@@ -1,0 +1,65 @@
+.syl-hero-event {
+  padding: 55px 0 0;
+  background-image: linear-gradient(to right, #324178, #3d4e90);
+  &__left {
+    @media (min-width: 992px) {
+      flex: 1;
+    }
+  }
+  &__right {
+    @media (min-width: 992px) {
+      flex: 1;
+      max-width: 573px;
+    }
+
+    & > * {
+      margin-bottom: 30px;
+    }
+  }
+  &__title {
+    font-size: 50px;
+    font-weight: 600;
+
+    @media (min-width: 992px) {
+      font-size: 60px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 74px;
+    }
+  }
+  &__description {
+    line-height: 30px;
+  }
+  &__search {
+    height: 56px;
+
+    button {
+      font-size: 30px;
+      width: 56px;
+      height: inherit;
+    }
+  }
+}
+
+.syl-event {
+  background-color: $syl-blue-light;
+}
+
+.card {
+  padding: 0;
+  &.card-event {
+    .card-body .card-title {
+      font-size: 35px;
+      color: $syl-blue-dark;
+    }
+  }
+}
+
+.multiline-truncate {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shape Your Life - Home</title>
+    <title>About - Shape Your Life</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
       rel="stylesheet"
@@ -13,100 +14,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./scss/sections/about/_the-solution.scss" />
   </head>
 
   <body>
     <!-- Header -->
-    <header class="syl-header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-              <img src="./images/logo.png" alt="Shape Your Life" height="50" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./about.html">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Programs
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Scholarships & Funding
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./scholarships-and-funding.html"
-                        >All Fundings</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Publications</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    More
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- ./End -->
+    <header id="syl-header" class="syl-header"></header>
+    <!-- ./End Header -->
 
     <!-- Hero Section -->
     <section
@@ -154,25 +74,34 @@
     <!-- Featured Section  -->
     <section id="syl-featured" class="syl-featured py-4">
       <div class="container">
-        <div class="d-md-flex align-items-center">
-          <div class="d-flex flex-column justify-content-between">
+        <div class="row">
+          <div class="col-12 col-md-3">
             <p class="text-dark-blue fw-semibold fs-5 lh-1">Featured by</p>
             <p class="fw-medium description">
               Prestigious and respected institutions all over the world
             </p>
           </div>
-          <div
-            class="d-flex flex-wrap justify-content-center flex-md-nowrap gap-4 syl-featured__logo"
-          >
-            <img src="./images/featured/apu.svg" alt="" />
-            <img src="./images/featured/apu-ina.svg" alt="" />
-            <img src="./images/featured/u-report.svg" alt="" />
-            <img src="./images/featured/sea-today.svg" alt="" />
+          <div class="col-12 col-md-9">
+            <div class="partner-slider">
+              <div class="slider-box">
+                <img src="./images/featured/apu.svg" alt="" />
+              </div>
+              <div class="slider-box">
+                <img src="./images/featured/apu-ina.svg" alt="" />
+              </div>
+              <div class="slider-box">
+                <img src="./images/featured/u-report.svg" alt="" />
+              </div>
+              <div class="slider-box">
+                <img src="./images/featured/sea-today.svg" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ./End -->
+
 
     <!-- The Problem Section -->
     <section id="problem" class="problem">
@@ -194,12 +123,219 @@
             </div>
           </div>
           <div class="col-12 col-lg-6 ps-5">
-            <img src="images/about/problem.jpeg" class="img-fluid" alt="get in touch">
+            <img src="images/about/problem.jpeg" class="img-fluid problem-image" alt="the problem">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Solution Section -->
+    <section id="the-solution" class="syl-the-solution">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Kolom Gambar -->
+          <div
+            class="col-lg-6 col-md-12 d-flex justify-content-center left-column"
+          >
+            <img
+              src="./images/about/The-Solution-1.png"
+              alt="Global Citizen Education (GCE)"
+              class="gce-image"
+            />
+          </div>
+          <!-- Kolom Teks -->
+          <div class="col-lg-6 col-md-12 right-column">
+            <h1 class="text-dark-blue fw-semibold">The Solution</h1>
+            <p>
+              <b>Shape Your Life</b> aims to support more students, especially
+              those who are underprivileged to pursue the best quality of higher
+              education of their choice.
+            </p>
+            <div class="gce-box">
+              <img src="./images/about/The-Solution-2.png" alt="GCE" />
+            </div>
+            <p>
+              Shape Your Life Indonesia provides the platform and offers
+              numerous programs such as free self-development workshops,
+              mentoring sessions, and an accessible platform of information to
+              empower Indonesia’s youth to acquire skills that make them strive
+              in the modern world.
+            </p>
           </div>
         </div>
       </div>
     </section>
     <!-- ./End -->
+
+    <section class="syl-impact pt-4">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg col-sm-12 d-flex flex-column justify-content-between"
+          >
+            <div>
+              <h1 class="text-dark-blue fw-semibold">Impact</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum neque nibh, tincidunt ut ipsum at, aliquet porta
+                nunc. Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <img
+              class="img-fluid"
+              src="./images/about/impact-img.png"
+              alt="impact-img"
+              width="516"
+            />
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="card mb-3 border-0 shadow">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="">
+                    <h2
+                      id="title_event"
+                      class="card-title-high text-clamp-impact text-dark-blue fw-semibold"
+                    >
+                      SYL x Fathia Fairuza Scholarship
+                    </h2>
+                    <p class="card-text text-clamp-impact text-secondary-blue">
+                      Congratulations to the awardees of the 1st and 2nd stage
+                      of this event!
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-end text-secondary-blue">2024</p>
+                    <p class="text-end text-secondary-blue">Aug 22</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0 shadow">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="">
+                    <h2
+                      id="title_event"
+                      class="card-title-high text-clamp-impact text-dark-blue fw-semibold"
+                    >
+                      Shape Your LIfe Bootcamp
+                    </h2>
+                    <p class="card-text text-clamp-impact text-secondary-blue">
+                      Congratulations to Definda Putri Arisna and Naura Olif
+                      Mazaya as the mentees of this program!
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-end text-secondary-blue">2024</p>
+                    <p class="text-end text-secondary-blue">Aug 22</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0 shadow">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="">
+                    <h2
+                      id="title_event"
+                      class="card-title-high text-dark-blue fw-semibold"
+                    >
+                      1-on-1 Consultation
+                    </h2>
+                    <p class="card-text text-clamp-impact text-secondary-blue">
+                      It is a free LIVE consultation session with our members to
+                      narrow down their major of interest and guide them to
+                      their choice of university!
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-end text-secondary-blue">2024</p>
+                    <p class="text-end text-secondary-blue">Aug 22</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0 shadow">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="">
+                    <h2
+                      id="title_event"
+                      class="card-title-high text-clamp-impact text-dark-blue fw-semibold"
+                    >
+                      Top 45 Youth Organization by XL Future Leaders
+                    </h2>
+                    <p class="card-text text-clamp-impact text-secondary-blue">
+                      Fathia Fairuza, Hania Humaira, and Qonita Aryana
+                      represented Shape Your Life in the XL Rumah Acceleration
+                      Innovation program in May 2022 and were selected as the
+                      TOP 45 organizations by XL Future Leaders.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-end text-secondary-blue">2024</p>
+                    <p class="text-end text-secondary-blue">Aug 22</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0 shadow">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="">
+                    <h2
+                      id="title_event"
+                      class="card-title-high text-clamp-impact text-dark-blue fw-semibold"
+                    >
+                      Projects at Ritsumeikan APU
+                    </h2>
+                    <p class="card-text text-clamp-impact text-secondary-blue">
+                      Received 88,000 JPY grant from Ritsumeikan Asia Pacific
+                      University Project Grant 2021
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-end text-secondary-blue">2024</p>
+                    <p class="text-end text-secondary-blue">Aug 22</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Team Section -->
+    <section id="our-teams" class="syl-team-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col d-flex align-items-center justify-content-between">
+            <h1 class="text-dark-blue fw-semibold">The Team</h1>
+            <div id="team-action-slider">
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="btn btn-blue-dark px-2 py-1 text-white fw-bold">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="the-teams"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End -->
 
     <!-- Get In Touch Section -->
     <section id="get-in-touch" class="get-in-touch">
@@ -290,43 +426,23 @@
     </section>
     <!-- ./End -->
 
-    <!-- Footer Links Section -->
-    <footer id="syl-footer" class="syl-footer">
-      <div
-        class="container d-flex flex-wrap flex-lg-nowrap gap-row-3 gap-5 justify-content-between align-items-center py-5"
-      >
-        <img src="./images/footer.png" alt="" class="" />
-        <div class="d-flex flex-wrap gap-5">
-          <div class="">
-            <h6>Scholarships</h6>
-            <a href="">Indonesian</a>
-            <a href="">Abroad</a>
-            <a href="">Exchange Programs</a>
-          </div>
-          <div class="">
-            <h6>About us</h6>
-            <a href="">Vision and Mission</a>
-            <a href="">Our Team</a>
-            <a href="">Our Impact</a>
-          </div>
-          <div class="">
-            <h6>Quick Links</h6>
-            <a href="">What We Do</a>
-            <a href="">News & Blog</a>
-            <a href="">Language Proficiency</a>
-          </div>
-        </div>
-      </div>
-      <div class="syl-footer__copyright">
-        <div class="container">
-          &copy; 2024 by Shape Your Life <br />
-          Powered by Ritsumeikan Asia Pacific University under
-          <a href="#">Project B*</a>
-        </div>
-      </div>
-    </footer>
+    <!-- Footer -->
+    <footer id="syl-footer" class="syl-footer"></footer>
     <!-- ./End -->
 
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

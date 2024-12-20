@@ -1,0 +1,22 @@
+.syl-bootcamps {
+    background-color: #f7eeb8;
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .card{
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+}
+.card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
